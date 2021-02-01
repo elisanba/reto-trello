@@ -1,9 +1,8 @@
-https://tberghuis.github.io/trello-board-clone
-## Description
-This project is a clone of a single trello board built with the javascript library react-beautiful-dnd. Link to the live app [here](https://tberghuis.github.io/trello-board-clone).
-
-![Screenshot](https://raw.githubusercontent.com/tberghuis/trello-board-clone/master/screenshot.png)
 
 
+
+
+Descripción
+Este proyecto es un clon de una sola placa trello construida con la biblioteca javascript react-beautiful-dnd
 ## Libraries used
 react, react-beautiful-dnd, styled-components, localforage, rxjs
