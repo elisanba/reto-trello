@@ -51,7 +51,7 @@ const Card = ({ listId, cardId, cardData }) => {
 };
 export default Card;
 
-// TODO refactor so code shared title and content
+
 
 const Delete = styled.div`
   position: absolute;

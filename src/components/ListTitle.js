@@ -3,7 +3,7 @@ import styled from "styled-components";
 import AutoSizeTextArea from "./AutoSizeTextArea";
 import { updateListTitle, deleteList } from "../state/boardData";
 
-// Repeat my editcard form logic, stuff abstracting to DRY
+
 
 const ListTitle = ({ setDragBlocking, dragHandleProps, listId, title }) => {
   const [editMode, setEditMode] = useState(false);

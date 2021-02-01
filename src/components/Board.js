@@ -66,7 +66,7 @@ const BoardContainer = styled.div`
 const onDragStart = tmp => {};
 
 const onDragEnd = result => {
-  // dropped nowhere
+  
   if (!result.destination) {
     return;
   }
