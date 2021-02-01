@@ -31,7 +31,7 @@ const AddCard = ({ listId }) => {
         updateValue=""
         onBlur={cancel}
         editMode={true}
-        placeholder="Enter a title for this card…"
+        placeholder="Introduce un titulo..."
       ></AutoSizeTextArea>
     </Wrapper>
   );

@@ -9,7 +9,7 @@ boardDataSubject.subscribe(_boardData => {
   boardData = _boardData;
 });
 
-// TODO I should generalise this function (DRY)
+
 export const reorderListPosition = (initialPosition, finalPosition) => {
   Object.values(boardData).forEach(list => {
     if (list.position === initialPosition) {
@@ -33,7 +33,7 @@ export const reorderListPosition = (initialPosition, finalPosition) => {
 };
 
 export const reorderCardPosition = (source, destination, cardId) => {
-  // moving card within same list
+  // mover tarjeta dentro de la misma lista
   if (source.droppableId === destination.droppableId) {
     const { cards } = boardData[source.droppableId];
     Object.values(cards).forEach(card => {
@@ -54,7 +54,8 @@ export const reorderCardPosition = (source, destination, cardId) => {
       card.position++;
     });
   }
-  // moving card between different lists
+  
+//moviendo tarjeta entre diferentes listas
   else {
     const sourceCards = boardData[source.droppableId].cards;
     const destinationCards = boardData[destination.droppableId].cards;
@@ -83,7 +84,7 @@ export const addCard = (listId, content) => {
   const card = { position, card_content: content };
   boardData[listId].cards[uuid()] = card;
 
-  // refactor to only update changed list for optimisation???
+  // refactorizar para actualizar solo la lista modificada para la optimización ???
   boardDataSubject.next({ ...boardData });
 };
 
